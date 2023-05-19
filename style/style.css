@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #141A1A;
+}
+
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem;
+    width: 90vw;
+}
+nav .nav-logo {
+    display: flex;
+    gap: .5rem;
+
+}
+nav .nav-logo img {
+    width: 40px;
+}
+nav .nav-logo p {
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+nav .nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.nav-menu a:hover {
+    color: #0872BF;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .hero {
+    display: flex;
+    flex-direction: column;
+    width: 83vw
+}
+.hero .hero-container {
+    display: flex;
+    width: 83vw;
+    height: 600px;
+    align-items: flex-end;
+    gap:50px;
+/*     background-color: red;
+ */}
+.hero .hero-container .hero-text {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 30px;
+}
+.hero .hero-container .hero-text .hero-saludo {
+    font-size: 1.5rem;
+}
+span {
+    color:#0872BF;
+}
+.hero .hero-container .hero-text h1 {
+    color: #0872BF;
+    font-size: 3rem;
+}
+.hero .hero-container .hero-text h2 {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+.hero .hero-container .hero-text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.hero .hero-container .hero-text .btn-hero {
+    width: 175px;
+    height: 60px;
+    background-color: #0872BF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+}
+.hero .hero-container .hero-text .hero-redes {
+    display: flex;
+    gap: 15px;
+}
+.hero .hero-container .hero-text .hero-redes p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.hero .hero-container .hero-text .hero-redes .iconos-redes {
+    display: flex;
+    gap: 10px;
+}
+
+.hero .hero-container .hero-img {
+    display: flex;
+    width: 50%;
+    background-image: url(/img/HeroBackground.svg);
+    background-repeat: no-repeat;
+    background-size: 60%
+}
+.hero .hero-container .hero-img .img-persona{
+    position: relative;
+    left: 70px;
+
+}
+
+
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.service h3 {
+    
+}
+.service h2 {
+    
+}
+.service .ubicacion-card-container {
+    display: flex;
+    gap: 66px;
+    justify-content: center;
+}
+.service .ubicacion-card-container .card-container {
+    width: 350px;
+}
+.service .ubicacion-card-container .card-container .card {
+    border: 3px solid;
+    border-image: linear-gradient(125deg, #21629f 0%, #1b2931 80%);
+    border-image-slice: 1;
+    border-radius: 50%;
+    text-align: center;
+}
+.service .ubicacion-card-container .card-container .card img {
+    width: 195px;
+    padding: 20px;
+}
+.service .ubicacion-card-container .card-container .card .title-card {
+    font-size: 1.5rem;
+}
+.service .ubicacion-card-container .card-container .card .descrip-card {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.projects h3 {
+
+}
+.projects h2 {
+
+}
+.projects .container-img-projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.projects .container-img-projects .projects-img{
+    border: 3px solid;
+    border-image: linear-gradient(125deg, #21629f 0%, #1b2931 80%);
+    border-image-slice: 1;
+    width: 43rem;
+    height: 27.5rem;
+
+}
+.projects .container-img-projects .projects-img img {
+    width: 39rem;
+}
+
+
+
+.testimonials {
+    text-align: center;
+}
+.testimonials h3 {
+}
+.testimonials h2 {
+}
+.testimonials .container-card-testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 2.6rem;
+}
+.testimonials .container-card-testimonials .container-card {
+    width: 400px;
+}
+.testimonials .container-card-testimonials .container-card img {
+}
+.testimonials .container-card-testimonials .container-card .test {
+}
+.testimonials .container-card-testimonials .container-card .name {
+}
+.testimonials .container-card-testimonials .container-card .info {
+}
