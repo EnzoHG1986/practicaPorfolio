@@ -45,6 +45,9 @@ header nav .nav-menu {
 header nav .nav-menu a {
     font-size: 1rem;
 }
+header nav .nav-menu a:hover{
+    color: #0872BF;
+}
 
 
 
@@ -52,9 +55,9 @@ header nav .nav-menu a {
 main {
 }
 main .hero {
-    padding: 15px
+    padding: 15px;
 }
-main .hero  span {
+span {
     color: #0872BF;
 }
 main .hero .hero-container {
@@ -83,6 +86,7 @@ main .hero .hero-container .hero-text button {
     height: 40px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 main .hero .hero-container .hero-text .hero-redes {
     display: flex;
@@ -94,6 +98,7 @@ main .hero .hero-container .hero-text .hero-redes p {
 main .hero .hero-container .hero-text .hero-redes .iconos-redes {
 }
 main .hero .hero-container .hero-text .hero-redes .iconos-redes img {
+    cursor: pointer;
 }
 main .hero .hero-container .hero-img {
     display: flex;
@@ -114,6 +119,8 @@ main .hero .hero-container .hero-img .img-persona {
 
 main .service {
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 main .service h3 {
@@ -127,18 +134,27 @@ main .service .ubicacion-card-container {
 
 }
 main .service .ubicacion-card-container .card-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+main .service .ubicacion-card-container .card-container .card {
     border: 2px solid #0872BF;
     border-radius: 15px;
     width: 280px;
-    height: 400px;
-}
-main .service .ubicacion-card-container .card-container .card {
+
 }
 main .service .ubicacion-card-container .card-container .card img {
+    padding: 1rem 0;
 }
 main .service .ubicacion-card-container .card-container .card .title-card {
+    font-size: 1.2rem;
+    padding: 1rem 0;
 }
 main .service .ubicacion-card-container .card-container .card .descrip-card {
+    font-size: .9rem;
+    padding: 1rem;
+    text-align: justify;
 }
 
 
@@ -146,30 +162,40 @@ main .service .ubicacion-card-container .card-container .card .descrip-card {
 
 
 main .projects {
+    padding-top: 50px;
     text-align: center;
 }
 main .projects h2 {
+
 }
 main .projects p {
+    padding: 15px;
+    text-align: justify;
 }
 main .projects .container-img-projects {
-
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 main .projects .container-img-projects .projects-img {
     border: 2px solid #0872BF;
     border-radius: 15px;
-    width: 280px;
+
 }
 main .projects .container-img-projects .projects-img img {
     width: 100%;
+    padding: 10px 5px;
 }
 main .projects .section-btn {
+    padding-top: 20px;
 }
 main .projects .section-btn button {
     background-color: #0872BF;
     width: 100px;
     height: 40px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -179,7 +205,10 @@ main .projects .section-btn button {
 
 
 main .testimonials {
+    padding-top: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 main .testimonials h3 {
 }
@@ -187,30 +216,50 @@ main .testimonials h2 {
     color: #0872BF;
 }
 main .testimonials .container-card-testimonials {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 15px;
+    margin: 0 auto;
+    
 }
 main .testimonials .container-card-testimonials .container-card {
     border: 2px solid #0872BF;
     border-radius: 15px;
     width: 280px;
+    padding: 10px;
+    height: 280px;
 }
 main .testimonials .container-card-testimonials .container-card img {
 }
 main .testimonials .container-card-testimonials .container-card p.text {
+    font-size: .8rem;
+    text-align: justify;
+
 }
 main .testimonials .container-card-testimonials .container-card .name {
+    color: #0872BF;
+    font-weight: 700;
 }
 main .testimonials .container-card-testimonials .container-card .info {
+    font-size: .7rem;
 }
 main .testimonials .section-btn {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 20px;
 }
 main .testimonials .section-btn button {
     border-radius: 50%;
     padding: 10px;
     background-color: #0872BF;
     font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+main .testimonials .section-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -218,37 +267,53 @@ main .testimonials .section-btn button {
 
 
 footer{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
 }
-footer h3 {
+footer .title {
+    font-weight: 600;
+    padding-left: 15px;
 }
 footer .container-portfolio {
+    padding-top: 10px;
 }
 footer .container-portfolio .company {
     display: flex;
     flex-direction: column;
-
+    width: 85vw;
 }
 footer .container-portfolio .company .company-container {
     display: flex;
     gap: 50px;
+    justify-content: center;
 }
 footer .container-portfolio .company .company-container ul {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 footer .container-portfolio .company .company-container ul h3 {
-    
+    font-size: .9rem;
 }
 footer .container-portfolio .company .company-container ul a {
-    font-size: .8rem;
+    font-size: .7rem;
 }
-footer .container-portfolio .company ul input {
+footer .container-portfolio .company  .newsletter {
+    padding-top: 25px;
+    margin: 0 auto;
+
+}
+
+footer .container-portfolio .company .newsletter  input {
     background-color: #2B2E3C;
     height: 50px;
     border-radius: 10px;
     border: none;
+
 }
-footer .container-portfolio .company ul button {
+footer .container-portfolio .company  button {
     background-color: #0872BF;
     width: 100px;
     height: 40px;
@@ -257,10 +322,19 @@ footer .container-portfolio .company ul button {
 }
 footer .redes {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
 }
 footer .redes p {
+    color: #0872BF;
 }
 footer .redes .redes-ico{
+    display: flex;
+    gap: 10px;
+
 }
 footer .redes .redes-ico i {
+    color: #0872BF;
 }
