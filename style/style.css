@@ -12,7 +12,6 @@
 }
 body {
     background-color: #141A1A;
-    width: 100vw;
 }
 header {
     display: flex;
@@ -55,7 +54,7 @@ header nav .nav-menu a:hover{
 main {
 }
 main .hero {
-    padding: 15px;
+
 }
 span {
     color: #0872BF;
@@ -65,9 +64,11 @@ main .hero .hero-container {
     flex-direction: column;
 }
 main .hero .hero-container .hero-text {
+    padding:15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
 }
 main .hero .hero-container .hero-text .hero-saludo {
 }
@@ -104,14 +105,16 @@ main .hero .hero-container .hero-img {
     display: flex;
     position: relative;
     align-items: flex-end;
+    width: 100%;
 }
 main .hero .hero-container .hero-img .img-back {
     position: absolute;
-    width: 90vw;
+    width: 100%;
 }
 main .hero .hero-container .hero-img .img-persona {
     position: relative;
-    width: 70vw;
+    width: 100%;
+
 }
 
 
@@ -165,22 +168,18 @@ main .projects {
     padding-top: 50px;
     text-align: center;
 }
-main .projects h2 {
-
-}
 main .projects p {
     padding: 15px;
     text-align: justify;
 }
 main .projects .container-img-projects {
     display: flex;
-    gap: 5px;
+    gap: 2vw;
     align-items: center;
 }
 main .projects .container-img-projects .projects-img {
     border: 2px solid #0872BF;
     border-radius: 15px;
-
 }
 main .projects .container-img-projects .projects-img img {
     width: 100%;
@@ -211,9 +210,11 @@ main .testimonials {
     flex-direction: column;
 }
 main .testimonials h3 {
+    font-size: 1rem;
 }
 main .testimonials h2 {
     color: #0872BF;
+    font-size: 1.2rem;
 }
 main .testimonials .container-card-testimonials {
     display: flex;
@@ -269,12 +270,12 @@ main .testimonials .section-btn button:hover {
 footer{
     padding-top: 50px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 footer .title {
+    font-size: 1.1rem;
     font-weight: 600;
-    padding-left: 15px;
+    margin: 0 auto;
 }
 footer .container-portfolio {
     padding-top: 10px;
@@ -282,11 +283,12 @@ footer .container-portfolio {
 footer .container-portfolio .company {
     display: flex;
     flex-direction: column;
-    width: 85vw;
+    width: 100vw;
+
 }
 footer .container-portfolio .company .company-container {
     display: flex;
-    gap: 50px;
+    gap: 15vw;
     justify-content: center;
 }
 footer .container-portfolio .company .company-container ul {
@@ -338,3 +340,106 @@ footer .redes .redes-ico{
 footer .redes .redes-ico i {
     color: #0872BF;
 }
+
+
+
+
+
+
+
+
+@media (min-width: 600px){ 
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    header nav .nav-logo {
+        align-items: flex-start;
+    }
+
+    header nav .nav-menu {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    main .hero .hero-container {
+        display: flex;
+        flex-direction: row;
+    }
+    main .hero .hero-container .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        width: 50vw;
+
+    }
+    main .hero .hero-container .hero-text .hero-redes {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    main .hero .hero-container .hero-img {
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+    }
+    main .hero .hero-container .hero-img .img-back {
+        position: absolute;
+        width: 50vw;
+    }
+    main .hero .hero-container .hero-img .img-persona {
+        position: relative;
+        width: 50vw;
+    }
+
+    main .service .ubicacion-card-container {
+        display: flex;
+        flex-direction: row;
+    }
+    main .service .ubicacion-card-container .card-container {
+        margin: 0 auto;
+    }
+    main .service .ubicacion-card-container .card-container .card {
+        width: 30vw;
+    }
+
+    main .projects p {
+        padding: 15px;
+        text-align: justify;
+    }
+    main .projects .container-img-projects {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    main .testimonials .container-card-testimonials {
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        gap: 15px;
+        margin: 0 auto;
+        
+    }
+    main .testimonials .container-card-testimonials .container-card {
+        border: 2px solid #0872BF;
+        border-radius: 15px;
+        width: 30vw;
+        padding: 10px;
+        height: 350px;
+    }
+
+    footer .title {
+        padding-left: 3vw;
+        margin: 0;
+    }
+    footer .container-portfolio .company {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    footer .container-portfolio .company .company-container {
+        width: 50vw;
+    }
+}
+
+
