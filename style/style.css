@@ -366,6 +366,7 @@ footer .redes .redes-ico i {
     main .hero .hero-container {
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
     }
     main .hero .hero-container .hero-text {
         display: flex;
@@ -383,6 +384,7 @@ footer .redes .redes-ico i {
         display: flex;
         position: relative;
         align-items: flex-end;
+        width: 50vw;
     }
     main .hero .hero-container .hero-img .img-back {
         position: absolute;
