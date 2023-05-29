@@ -9,6 +9,7 @@
     text-decoration: none;
     color:#FFFFFF;
     font-family: 'Open Sans', sans-serif;
+    
 }
 body {
     background-color: #141A1A;
@@ -54,7 +55,8 @@ header nav .nav-menu a:hover{
 main {
 }
 main .hero {
-
+    display: flex;
+    justify-content: center;
 }
 span {
     color: #0872BF;
@@ -62,6 +64,7 @@ span {
 main .hero .hero-container {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 main .hero .hero-container .hero-text {
     padding:15px;
@@ -106,14 +109,18 @@ main .hero .hero-container .hero-img {
     position: relative;
     align-items: flex-end;
     width: 100%;
+    
 }
 main .hero .hero-container .hero-img .img-back {
     position: absolute;
     width: 100%;
+    max-width: 400px;
+    
 }
 main .hero .hero-container .hero-img .img-persona {
     position: relative;
     width: 100%;
+    max-width: 400px;
 
 }
 
@@ -171,6 +178,7 @@ main .projects {
 main .projects p {
     padding: 15px;
     text-align: justify;
+    font-size: .9rem;
 }
 main .projects .container-img-projects {
     display: flex;
@@ -363,18 +371,48 @@ footer .redes .redes-ico i {
         align-items: center;
     }
 
+    main .hero {
+        display: flex;
+        margin: 0 auto;
+    }
     main .hero .hero-container {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
+        align-items: flex-end;
     }
     main .hero .hero-container .hero-text {
         display: flex;
         flex-direction: column;
-        gap: 9px;
+        gap: 1.5rem;
         width: 50vw;
-
     }
+    
+main .hero .hero-container .hero-text .hero-saludo {
+    font-size: 1rem;
+}
+main .hero .hero-container .hero-text h1 {
+    font-size: 2.2rem;
+    color: #0872BF;
+}
+main .hero .hero-container .hero-text h2 {
+    font-size: 1.2rem;
+}
+main .hero .hero-container .hero-text p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
     main .hero .hero-container .hero-text .hero-redes {
         display: flex;
         align-items: center;
@@ -394,7 +432,6 @@ footer .redes .redes-ico i {
         position: relative;
         width: 50vw;
     }
-
     main .service .ubicacion-card-container {
         display: flex;
         flex-direction: row;
@@ -405,23 +442,19 @@ footer .redes .redes-ico i {
     main .service .ubicacion-card-container .card-container .card {
         width: 30vw;
     }
-
     main .projects p {
-        padding: 15px;
-        text-align: justify;
+        font-size: 1rem;
     }
     main .projects .container-img-projects {
         width: 90vw;
         margin: 0 auto;
     }
-
     main .testimonials .container-card-testimonials {
         display: flex;
         flex-direction: row;
         padding-top: 15px;
         gap: 15px;
         margin: 0 auto;
-        
     }
     main .testimonials .container-card-testimonials .container-card {
         border: 2px solid #0872BF;
@@ -430,7 +463,6 @@ footer .redes .redes-ico i {
         padding: 10px;
         height: 350px;
     }
-
     footer .title {
         padding-left: 3vw;
         margin: 0;
@@ -443,5 +475,4 @@ footer .redes .redes-ico i {
         width: 50vw;
     }
 }
-
 
